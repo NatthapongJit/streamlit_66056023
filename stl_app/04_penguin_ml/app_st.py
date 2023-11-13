@@ -15,8 +15,8 @@ st.write("This app uses 6 inputs to predict the species of penguin using "
 penguin_file = st.file_uploader('Upload your own penguin data')
 
 if penguin_file is None:
-    rf_pickle = open('random_forest_penguin.pickle', 'rb')
-    map_pickle = open('output_penguin.pickle', 'rb')
+    rf_pickle = open('stl_app/04_penguin_ml/random_forest_penguin.pickle', 'rb')
+    map_pickle = open('stl_app/04_penguin_ml/output_penguin.pickle', 'rb')
 
     rfc = pickle.load(rf_pickle)
     unique_penguin_mapping = pickle.load(map_pickle)
