@@ -13,8 +13,8 @@ if st.button('Add the new To-Do item'):
 
 st.write('My new To-Do list is:', st.session_state.my_todo_list)
 
-# Fix
+# TODO
 # 1. make it save to session state
 #    https://docs.streamlit.io/library/api-reference/session-state
 # 2. add a number input for number of day for each todo.
-#    You may need to change the data structure of `my_todo_list`str
+#    You may need to change the data structure of `my_todo_list`

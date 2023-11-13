@@ -17,7 +17,7 @@ selected_y_var =  st.selectbox('เลือก แกน y', (choices))
 
 # https://docs.streamlit.io/library/api-reference/widgets/st.file_uploader
 # 2. สร้าง st.file_uploader เพื่อให้เลือกไฟล์ .csv เท่านั้น จากเครื่องผู้ใช้งาน
-penguin_file = None
+penguin_file = st.file_uploader("Choose a CSV file", accept_multiple_files=True)
 
 if penguin_file is not None:
     penguins_df = pd.read_csv(penguin_file)
